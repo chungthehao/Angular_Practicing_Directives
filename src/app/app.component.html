@@ -7,9 +7,9 @@
 
       <ul>
         <li 
-          *ngFor="let item of logArr"
-          [ngStyle]="{ 'background-color': item >=5 ? 'blue' : '' }"
-          [ngClass]="{ 'text-white': item >= 5 }">
+          *ngFor="let item of logArr; let i = index"
+          [ngStyle]="{ 'background-color': i+1 >=5 ? 'blue' : '' }"
+          [ngClass]="{ 'text-white': i+1 >= 5 }">
           {{ item }}
         </li>
       </ul>

@@ -12,6 +12,7 @@ export class AppComponent {
   
   toggleShowText() {
   	this.showText = !this.showText;
-  	this.logArr.push(this.logArr.length + 1);
+  	// this.logArr.push(this.logArr.length + 1);
+  	this.logArr.push(new Date());
   }
 }
